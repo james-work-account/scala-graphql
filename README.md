@@ -29,14 +29,14 @@ type Owner implements Identifiable {
   id: String!
   name: String!
   isHeavy: String!
-  products: [Product]
+  products: [Product!]!
 }
 
 type Query {
   product(id: String!): Product
   products: [Product]
   owner(id: String!): Owner
-  owners: [Owners]
+  owners: [Owner!]!
 }
 ```
 
