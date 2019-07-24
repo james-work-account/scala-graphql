@@ -34,7 +34,7 @@ type Owner implements Identifiable {
 
 type Query {
   product(id: String!): Product
-  products: [Product]
+  products: [Product!]!
   owner(id: String!): Owner
   owners: [Owner!]!
 }
